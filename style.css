@@ -1,0 +1,798 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*font-family: Sans-serif;*/
+    /*font-family: "Comic Sans MS";*/
+    /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+
+.clearing {
+    clear : both;
+}
+
+
+img {
+    width: 100%;
+    
+}
+
+
+.link-style {
+    background: #0561bd;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0 0 5px #0561bd;
+}
+
+.link-style:hover {
+    background: #054585;
+}
+
+.h2-title {
+    text-align: center;
+    margin: 40px auto;
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #c6cace;
+    margin: 3% auto 0 auto;
+}
+
+
+.small-vertical-line {
+    width: 1px;
+    height: 60%;
+    background: #c6cace;
+    float: left;
+    
+}
+
+.small-horizontal-line {
+    width: 100%;
+    height: 1px;
+    background: #c6cace;
+    margin: 0 auto 20px auto;
+}
+
+
+
+nav {
+    
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    box-shadow: 0 0 25px black;
+    background: white;
+    z-index: 1;
+    
+    
+}
+
+nav .container {
+    width: 98%;
+    margin: auto;
+    position: relative;
+    
+}
+
+#logo {
+    width: 100px;   
+    float: left;
+    
+    
+}
+
+
+#links-container {
+    width: 90%;
+    float: right;
+    text-align: right;
+    transform: translateY(30px);
+}
+
+#new-links-container {
+    padding: 10px 40px;
+    display: none;
+}
+
+#new-links-container ul {
+    list-style: none;
+}
+
+#new-links-container ul li {
+    border-bottom: solid 0.5px gray;
+    padding: 10px;
+}
+
+#new-links-container ul li:hover {
+    font-weight: bold;
+}
+
+#new-links-container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu {
+    float: right;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+    
+}
+
+
+#links-container li {
+    display: inline-block;    
+    padding: 5px 20px;
+    color: green;
+    
+}
+
+
+
+#links-container li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+#links-container li a:hover {
+    color: #0561bd;
+    padding-bottom: 20px;
+    border-bottom: solid medium #0561bd;
+}
+
+#links-container li:last-child {
+    background: #0561bd;
+}
+
+
+
+/* Section 1  */
+
+.section1 {
+    position: relative;
+    
+    background: url('images/restaurant_alwayson-blog_854x4001.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.section1 .words {
+    
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50% , -50%);
+    
+}
+
+.section1 .covering {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    
+}
+
+.section1 .words h2 , .section1 .words h3 {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    
+}
+
+.section1 .words h2  {
+    font-size: 2em;
+    margin: 30px 0;
+    
+    
+}
+
+.section1 .words h3 {
+    font-size: 1.5em;
+}
+
+.section1 .links {
+    
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+.section1 .words .links a {
+    margin-left: 10px;
+    width: 20%;
+    
+    
+}
+
+
+
+/* Section 2 */
+
+.section2 {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.section2 h3 {
+    margin: 40px auto;
+    text-align: center;
+    font-weight: normal;
+}
+
+.section2 #devices-image {
+    width: 45%;
+    float: left;
+    transform: translateY(50px);
+    transition: transform 0.3s;
+}
+
+.section2 #devices-image:hover {
+    transform: translateY(0px) scale(1.3) rotate(20deg);
+}
+
+
+.section2 #right-side {
+    width: 50%;
+    float: left;
+    margin-left: 3%;
+}
+
+.section2 #right-side h4 {
+    margin: 2% 0;
+    font-size: 1.1em;
+    
+}
+
+.section2 .Link {
+    text-align: center;
+    
+}
+
+/* Section 3 */ 
+
+.section3 {
+    background: #f0f0f0;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    /*margin: 3% 0;*/
+}
+
+
+.section3 .flex-benifits {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section3 .flex-benifits div {
+    width: 30%;
+    margin: 2% 1%;
+
+}
+
+.section3 .flex-benifits div .icon {
+    width: 8%;
+    float: left;
+    margin-bottom: 10px; 
+    margin-right: 15px;
+    
+}
+
+.section3 .flex-benifits div .content {
+    width: 80%;
+    float:left;
+    
+}
+
+.section3 .flex-benifits div .content h4 {
+    margin-bottom: 10px; 
+}
+
+.section3 .flex-benifits div .content p {
+    line-height: 1.5;
+}
+
+.section3 .Link-container {
+    text-align: center;
+    margin: 2% auto;
+}
+
+
+
+
+/* Section 4  */
+
+
+.section4 {
+    /*margin: 2% auto;*/
+}
+
+.section4 .scrolling {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    animation-name: scrolling;
+    animation-timing-function: ease-in-out;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    display: flex;
+   
+}
+
+.section4 div {
+    width: 100%;
+    margin: 0 2%;
+    
+}
+
+.section4 div img {
+    width: 90vw;
+}
+
+
+@keyframes scrolling {
+
+    0%   {right: 0   }
+    5%   {right: 0   }   /* No change  */
+    10%  {right: 95% }
+    20%  {right: 95% }   /* No change  */
+    30%  {right: 190%}
+    40%  {right: 190%}   /* No change */
+    50%  {right: 285%}
+    60%  {right: 285%}   /* No change */
+    70%  {right: 380%}
+    80%  {right: 380%}   /* No change */
+    90%  {right: 475%}
+    100% {right:475% }   /* No change */
+}
+
+
+
+
+/* Section 5 */
+
+.section5 {   
+    background: #f0f0f0;
+    padding: 20px 0;
+    /*margin: 3% auto 8% auto;*/
+    
+    
+}
+
+.section5 .container  {  
+    
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.section5 .container .content {
+    width: 44%;
+    float:left;  
+    margin-left: 2%;
+    margin-bottom: 30px;
+}
+
+
+
+
+.section5 .container .content h3 {
+    margin: 3% 0 1% 0 ;
+    text-align: center;
+    font-weight: normal;
+}
+
+.section5 .container .content .image-container {
+    box-shadow: 0 0 15px black;
+    float: left;
+    width: 30%;
+    margin-top: 30px;
+}
+
+
+.section5 .container .content .right-words {
+    float: left;
+    width: 60%;
+    margin-left: 8%;
+}
+
+.section5 .container .content .right-words p {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+
+
+/* Section 6  */
+.section6 {
+    background: #c7d600;
+    padding: 5% 2%;
+}
+
+.section6 .container {
+    margin: auto;
+    text-align: center;
+}
+
+
+.section6 .container .image-container {
+    float: left;
+    width: 15%;
+    margin-right: 100px;
+    
+}
+
+.section6 .container .image-container img {
+    border-radius: 50%;
+    border: solid thick white;
+    width: 200px;
+}
+
+.section6 .container .right-words {
+    float:left;
+    width: 70%;
+    
+    
+}
+
+.section6 .container .right-words h3 , .section6 .container .right-words p , .section6 .container .right-words span {
+    text-align: center;
+    margin: 20px auto;
+    
+}
+
+.section6 .container .right-words .small-p {
+    font-size: 0.9em;
+}
+
+/* Section 7 */
+
+.section7 {
+    padding: 0 60px;
+    margin-bottom: 4%;
+}
+
+.section7 .flex-employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section7 .flex-employees div {
+    width: 250px;
+    margin: 2% 0.5%;
+}
+
+.section7 .flex-employees div .image-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.section7 .flex-employees div a {
+    color: black;
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+.section7 .flex-employees div a:hover {
+    color: #0561bd;
+}
+
+.section7 .read-more-link {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 40px 0 20px 0;
+    
+}
+
+
+
+/* Section 8  */
+
+.section8 {
+    background: #f0f0f0;
+    padding: 30px 0 100px 0 ;
+    text-align: center;
+    
+}
+
+
+.section8 h2 {
+    margin-bottom:  40px; 
+}
+
+
+/* Last Section */
+
+.last {
+    background: rgba(0,0,0,0.9);
+    margin: auto;
+    padding : 50px 20px 30px 60px;
+}
+
+.last h4 , .last #recent  {
+    color: #2291eb;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.last p {
+    color: white;
+    font-size: 0.9em;
+}
+
+.last span {
+    color :white;
+}
+
+
+.last #first , .last #second , .last #third  {
+    float: left;
+    margin: 1.5%;
+    
+    
+}
+
+
+
+
+.last #first {
+    width: 25%;
+    
+}
+
+
+
+.last #first .icons {
+    display: flex;
+    margin: 15px 0 50px 0;
+}
+ 
+
+.last #first .icons .icon {
+   
+    margin: 3px;
+    
+}
+
+.last #first .icons .icon a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+ 
+.last #first h4 {
+    
+}
+
+
+.last #first p {
+    
+}
+
+/* ----  */
+
+.last #second {
+    width: 25%;
+}
+
+.last #second .news-items div a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.last #second #rss , .last #second .news-items div div {
+    display: inline-block;
+}
+
+.last #second #rss {
+    margin-right: 1%;
+}
+
+.last #second .news-items div span {
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 0.8em;
+
+}
+
+.last #second #rss img , .last #second .news-items div div img{
+    width: 15px;
+}
+
+
+/* ---- */ 
+
+.last #third {
+    width: 40%;
+    
+}
+
+
+
+.last #third .floating .image-container {
+    float: left;
+    width: 20%;
+    margin-right: 3%;
+}
+
+
+.last #third .floating .right-side {
+    float: left;
+    width: 70%;
+}
+
+.last #third .floating .right-side p:first-child {
+    margin-bottom: 20px;
+}
+
+
+
+.last #third .floating .right-side p:last-child {
+    margin-top: 20px;
+}
+
+
+.last #third .floating .right-side p:last-child a {
+    color: #2291eb;
+    text-decoration: none;
+}
+
+
+.last #third .floating .right-side div{
+    display: inline-block;
+    width: 40%;
+}
+
+
+/* Copyright */ 
+
+.copyright {
+    padding: 20px 0;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+.copyright p a {
+    text-decoration: none;
+    color: #0561bd;
+}
+
+
+
+
+
+
+/* Media Query  */ 
+@media screen and (max-width:1250px) {
+    
+    nav {
+        position: static;
+    }
+    
+    
+    #links-container {
+        display: none;
+    }
+    
+    #menu {
+        display: block;
+        padding: 30px 0;
+    }
+    
+    
+    
+    
+    
+}
+
+@media screen and (max-width:1000px) {
+    
+    .section3 .flex-benifits div {
+        width: 100%;
+    }
+    
+     .last #first , .last #second , .last #third  {
+        width: 100%;
+         margin-bottom: 50px;
+    }
+    
+    
+    
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .section2 #devices-image {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    
+    .section2 #right-side {
+        width: 80%;
+        float: none;
+        
+    }
+    
+    .section5 .container .content {
+        width: 100%;
+        
+    }
+    
+    .section5 .container .section-line {
+        display: none;
+    }
+    
+    .section6 .container .image-container {
+        width: 100%;
+        
+    
+    }
+    
+    .section6 .container div {
+        float: none;
+    }
+    
+    .section6 .container .right-words {
+        width: 100%;
+        margin: auto;
+        padding: 15px;
+        
+    }
+    
+   
+}
+
+
+
+
+

@@ -14,7 +14,7 @@ p {
 
 
 html {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 
@@ -340,45 +340,57 @@ nav .container {
     /*margin: 2% auto;*/
 }
 
-.section4 .scrolling {
-    width: 95%;
+.section4 .container {
+    width: 80%;
+    height: 20vh;
     margin: auto;
-    position: relative;
+    overflow: hidden;
+    
+}
+
+.section4 .container .scrolling {
+    width: 20000px;
+    height: 100%;
     animation-name: scrolling;
     animation-timing-function: ease-in-out;
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 2s;
-    display: flex;
-   
+    animation-delay: 2s; 
+    
+      
 }
 
-.section4 div {
-    width: 100%;
-    margin: 0 2%;
+.section4 .container .scrolling  .images-container {
+    width: 80vw;
+    height: 100%;
+    float: left;
+    
+    
     
 }
 
-.section4 div img {
-    width: 90vw;
+.section4 .container .scrolling  .images-container img {
+    width: 90%;
+    height: 100%;
+    
 }
 
 
 @keyframes scrolling {
-
-    0%   {right: 0   }
-    5%   {right: 0   }   /* No change  */
-    10%  {right: 95% }
-    20%  {right: 95% }   /* No change  */
-    30%  {right: 190%}
-    40%  {right: 190%}   /* No change */
-    50%  {right: 285%}
-    60%  {right: 285%}   /* No change */
-    70%  {right: 380%}
-    80%  {right: 380%}   /* No change */
-    90%  {right: 475%}
-    100% {right:475% }   /* No change */
+    
+    0%   {margin-left: 0   }
+    5%   {margin-left: 0   }   /* No change  */
+    10%  {margin-left: -100% }
+    20%  {margin-left: -100% }   /* No change  */
+    30%  {margin-left: -200%}
+    40%  {margin-left: -200%}   /* No change */
+    50%  {margin-left: -300%}
+    60%  {margin-left: -300%}   /* No change */
+    70%  {margin-left: -400%}
+    80%  {margin-left: -400%}   /* No change */
+    90%  {margin-left: -500%}
+    100% {margin-left: -500% }   /* No change */
 }
 
 
